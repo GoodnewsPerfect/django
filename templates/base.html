@@ -16,7 +16,7 @@
                 </div>
             </header>
                 {% if user.is_authenticated %}
-                    <p>Hello {{ user.username }}!</p>
+                    <p>Hello my favourite{{ user.username }}!</p>
                     <p><a href="{% url 'logout' %}">Log out</a></p>
                 {% else %}
                     <p>You are not logged in.</p>
