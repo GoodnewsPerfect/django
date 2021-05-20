@@ -46,7 +46,7 @@ class BlogTests(TestCase):
         self.assertContains(response, 'A good title')
         self.assertTemplateUsed(response, 'post_detail.html')
 
-    def test_post_create_view(self):  # new
+    def test_post_create_view(self):
         response = self.client.post(reverse('post_new'), {
             'title': 'New title',
             'body': 'New text',
